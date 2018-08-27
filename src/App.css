@@ -1,28 +1,75 @@
-.App {
+
+body{
+  background-image: url('https://images.pexels.com/photos/167491/pexels-photo-167491.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');  
+}
+
+.card1{
+  display: flex;
+  flex-direction: column;  
+  justify-content:space-between;
   text-align: center;
+  width:275px;  
+  transition-property:background,transform,color;
+  transition-duration: 1s;
+  background: rgba(255,255,255,0.7);
+  background: #E9EBEE;  
+  padding:35px;
+  border:2px solid #BDBDBD;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.music-cards{
+  display: flex;
+  flex-wrap: wrap; 
+  
+}
+.card1:hover .img-album{
+  transform: rotate(5deg);
+}
+.card1:hover  .title{
+  color:white;
+}
+.card1:hover{
+  transform:scale(1.02);
+  background: rgba(0,0,0,0.5);  
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+nav{
+  background: #000;
+  color:white;
 }
 
-.App-title {
-  font-size: 1.5em;
+.title{
+  color:steelblue;
+  font-weight: bold;
+}
+.img-album{
+  transition-property: transform;
+  transition-duration: 1s;
+}
+.price{
+  color:green;
+}
+.release{
+  font-weight: bold;
 }
 
-.App-intro {
-  font-size: large;
+.btn-more{
+  border:none;
+  border:1.5px solid green;
+  background: transparent;
+  color:black;
+  border-radius: 15px;
+}
+.card1:hover .btn-more{
+  background:rgba(255,255,255,0.8);
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.search{
+  color:white;
+}
+
+.results{
+  color:white;
+  font-weight: bold;
 }
